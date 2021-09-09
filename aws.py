@@ -147,7 +147,7 @@ class networkAndSecurity:
         result = getoutput("aws ec2 create-security-group --group-name {} --description {}".format(groupname,desc))
         return result
     
-    def deleteSecurityGroup(groupname):   # Delete Security group
+    def deleteSecurityGroup(groupname,desc):   # Delete Security group
         result = getoutput("aws ec2 delete-security-group --group-name {} --description {}".format(groupname,desc))
         return result
 
